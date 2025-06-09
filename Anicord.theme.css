@@ -7,98 +7,66 @@
  * @website https://github.com/sang765/Anicord-Theme
  * @source https://github.com/sang765/Anicord-Theme/blob/main/Anicord.theme.css
  * @authorId 926519119849869322
- * @updateUrl https://sang765.github.io/Anicord-Theme/Anicord.theme.css
-*/
-
-/*
-ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ𝑨𝒏𝒊𝒎𝒆 𝒊𝒏𝒔𝒊𝒅𝒆 𝑫𝒊𝒔𝒄𝒐𝒓𝒅ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ
-| ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ |
-| |     █████╗ ███╗   ██╗██╗ ██████╗ ██████╗ ██████╗ ██████╗    | |
-| |    ██╔══██╗████╗  ██║██║██╔════╝██╔═══██╗██╔══██╗██╔══██╗   | |
-| |    ███████║██╔██╗ ██║██║██║     ██║   ██║██████╔╝██║  ██║   | |
-| |    ██╔══██║██║╚██╗██║██║██║     ██║   ██║██╔══██╗██║  ██║   | |
-| |    ██║  ██║██║ ╚████║██║╚██████╗╚██████╔╝██║  ██║██████╔╝   | |
-| |    ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝    | |
-| ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ |
-|ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ
-*/  
+ * @updateUrl https://raw.githubusercontent.com/voltredev/voltretheme/main/Anicord.theme.css
+ */
 
 /* Theme Import */
-@import url('https://sang765.github.io/Anicord-Theme/themes/Anicord.css');
-/* CSS You Can Custom */
+@import url('https://raw.githubusercontent.com/voltredev/voltretheme/main/themes/Anicord.css');
+
+/* Custom Properties */
 :root {
-	--app-bg: url(https://sang765.github.io/Anicord-Theme/assets/themeimage.png); /* background */
-	/* 📄 NOTE: If you want the background to be transparent then you can remove the `url(imageurl)` and then change the attribute to `transparent`
-           Requirements: Please enable "Windows Transparent" in your client mod make sure that work. You aslo can use Mica For Everyone to have a transparent backgound with Mica blur effect */
-	/* Blur, Margin, Radius */
+	--app-bg: url(https://raw.githubusercontent.com/voltredev/theme/ffb3aa76473a7da088537bb25e4e991c1c41a140/asset/themeimage.png);
 	--app-blur: 5px;
 	--app-margin: 24px;
 	--app-radius: 10px;
-	/* Font */
+
 	--main-font: 'Tilt Neon';
 	--code-font: '';
-	/* Server Title */
-	--title-style: center; /* left or center*/
-	/* Color - HSLA */ /* Hex to HSL here: https://htmlcolors.com/hex-to-hsl */
-	--accent-hue: 204; /* H */
-	--accent-saturation: 80%; /* S */
-	--accent-lightness: 65%; /* L */
-	--accent-opacity: 1; /* A */
-	--accent-text-color: #fff; /* Text Color */
-	/* Others */
+	--title-style: center;
+
+	--accent-hue: 204;
+	--accent-saturation: 80%;
+	--accent-lightness: 65%;
+	--accent-opacity: 1;
+	--accent-text-color: #fff;
+
 	--sidebar-color: rgba(0,0,0,0.4);
-	--main-content-color: rgba(0,0,0,0.2); /*	-	*/
-	/* Message */
+	--main-content-color: rgba(0,0,0,0.2);
+
 	--message-color: rgba(0,0,0,0.4);
 	--message-radius: 8px;
 	--message-padding-top: 8px;
-	--message-padding-side: 8px; /*	-	*/
-	/* Reply */
+	--message-padding-side: 8px;
+
 	--reply-hue: var(--accent-hue);
 	--reply-saturation: 77.4%;
 	--reply-lightness: 61.8%;
-	--reply-opacity: 1; /*	-	*/
-	/* Textarea */
+	--reply-opacity: 1;
+
 	--textarea-color: 255,255,255;
 	--textarea-alpha: 0.1;
 	--textarea-alpha-focus: 0.15;
 	--textarea-text-color: #fff;
-	--textarea-radius: 22px;  /*	-	*/
-	/* Card */
+	--textarea-radius: 22px;
+
 	--card-color: rgba(0,0,0,0.4);
 	--card-color-hover: rgba(0,0,0,0.5);
-	--card-color-select: rgba(0,0,0,0.7); /*	-	*/
-	/* Button */
+	--card-color-select: rgba(0,0,0,0.7);
+
 	--button-height: 32px;
 	--button-padding: 0 16px;
 	--button-action-color: #000;
-	--button-radius: 16px; /*	-	*/
-	/* Scrollbar */
+	--button-radius: 16px;
+
 	--interactive-normal: #aaa;
 	--interactive-hover: #ddd;
 	--interactive-active: #fff;
-	--interactive-muted: #777; /*	-	*/
-	/* Background */
+	--interactive-muted: #777;
+
 	--background-modifier-hover: rgba(255,255,255,0.075);
 	--background-modifier-selected: rgba(255,255,255,0.125);
-	/* SETTING MODAL */
-  	--settingsinline-size: 960;
-  	--settingsblock-size: 80;
-  	--settingsbackground: transparent;
-}
 
-/*
-			            <= CREDITS =>
-|<================================= Anicord Team ==================================>|
-| <+>           sang765                                       Author		    |
-|<=================================================================================>|
-| <-> Settings Icons                           by DevilBro			    |
-| <-> Better Mark As Read Button               by Lonk		         	    |
-| <-> Chillax                                  by warrayquipsome and Contributors   |
-| <-> Translucence                             by CapnKitten			    |
-| <-> ClearVersionV6                           by NyxIsBad and Contributors	    |
-| <-> BetterDiscord Custom CSS Community       https://discord.gg/0Tmfo5ZbORCRqbAd  |
-| <-> Vencord Custom CSS Community             https://discord.gg/D9uwnFnqmd	    |
-| <-> You                                      for using this theme		    |
-|<=================================================================================>|
-*/
+	--settingsinline-size: 960;
+	--settingsblock-size: 80;
+	--settingsbackground: transparent;
+}
